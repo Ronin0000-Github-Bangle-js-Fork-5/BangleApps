@@ -272,7 +272,7 @@ function onFrame() {
 
     // draw text during game over state
     g.setFont("4x6", 2);  // set font and size x 2
-    g.setColor(0,0,0);    // set color (black)
+    g.setColor(g.theme.bg);    // set color (black)
     g.drawString("SCORE:" + score ,5, 5);
     g.drawString("LIVES:" + lives ,117, 5);
     g.drawString("GAME OVER", 52, 80);
@@ -436,7 +436,7 @@ function onFrame() {
 
     // - draw text -------------------------------------
     g.setFont("4x6", 2);  // set font and size x 2
-    g.setColor(0,0,0);    // set color (black)
+    g.setColor(g.theme.bg);    // set color (black)
     g.drawString("SCORE:" + score ,5,5);
     g.drawString("LIVES:" + lives ,117,5);
 
@@ -448,5 +448,3 @@ function onFrame() {
 
 
 gameStart();
-
-
